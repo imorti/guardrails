@@ -41,6 +41,8 @@ test("server-renders the Guardrails Lab application", async () => {
   assert.match(html, /Run the pipeline/);
   assert.match(html, /Roles and documents are simulated/);
   assert.match(html, /Run guardrails/);
+  assert.match(html, /src="\/boar-life-black\.png"/);
+  assert.match(html, /Black and white wild boar guardian illustration/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 
