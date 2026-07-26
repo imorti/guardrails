@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useMemo, useState } from "react";
 import {
   EXAMPLES,
@@ -103,29 +102,19 @@ export default function Home() {
           </div>
         </div>
         <aside className="principle-card">
-          <div className="guardian-art">
-            <Image
-              alt="Black and white wild boar guardian illustration"
-              fill
-              priority
-              sizes="(max-width: 900px) 500px, 360px"
-              src="/boar-life-black.png"
-              unoptimized
-            />
-            <span>Policy guardian</span>
+          <div className="guardian-sigil" aria-hidden="true">
+            <span>G</span>
           </div>
-          <div className="principle-content">
-            <p className="principle-label">Core principle</p>
-            <blockquote>
-              Authorization happens <em>before</em> retrieval, never after.
-            </blockquote>
-            <div className="principle-flow" aria-label="Safety pipeline">
-              <span>Prompt</span>
-              <i />
-              <span>Policy</span>
-              <i />
-              <span>Answer</span>
-            </div>
+          <p className="principle-label">Core principle</p>
+          <blockquote>
+            Authorization happens <em>before</em> retrieval, never after.
+          </blockquote>
+          <div className="principle-flow" aria-label="Safety pipeline">
+            <span>Prompt</span>
+            <i />
+            <span>Policy</span>
+            <i />
+            <span>Answer</span>
           </div>
         </aside>
       </section>

@@ -12,8 +12,6 @@ The project demonstrates three controls:
 3. **Output verification** redacts structured personal data and rejects
    selected factual claims that are unsupported by approved source context.
 
-![Black and white boar guardian artwork](web/public/boar-life-black.png)
-
 ## Project status
 
 The interactive web demo is retained in this repository, but public access to
@@ -106,3 +104,7 @@ cp .env.example .env
 ```
 
 The current deterministic demo does not use `OPENAI_API_KEY`.
+
+## License
+
+The source code is available under the [MIT License](LICENSE).
